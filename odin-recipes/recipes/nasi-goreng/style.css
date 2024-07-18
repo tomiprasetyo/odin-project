@@ -1,0 +1,98 @@
+/* Warna dan font dasar */
+:root {
+  --background-color: #fffaf0; /* Krim lembut */
+  --text-color: #333333; /* Warna gelap untuk kontras yang baik */
+  --primary-color: #0a9396; /* Warna teal sebagai aksen */
+  --secondary-color: #005f73; /* Warna teal yang lebih gelap */
+  --accent-color: #e9d8a6; /* Warna krem sebagai aksen */
+  --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.5;
+  margin: 0;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--secondary-color);
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 0.3em;
+}
+
+h3 {
+  font-size: 1.2em;
+  color: var(--primary-color);
+}
+
+.recipe {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: var(--background-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+ul,
+ol {
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Link style */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+figure {
+  text-align: center;
+}
+
+figcaption {
+  font-style: italic;
+  margin-top: 5px;
+}
